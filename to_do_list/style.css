@@ -1,0 +1,88 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation
+------------------------------------------------------------------------------*/
+
+
+
+/* List
+------------------------------------------------------------------------------*/
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 35px;
+    background: #eee;
+    font-size: 14px;
+    user-select: none; /* You cannot select the text to e.g copy it (double click text) */
+}
+
+/* Style "odd" list items */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+/* Style "checked" list items */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" symbol when clicked on */
+ul li.checked::before {
+    content: ''; /* Used to add content (in this case just placeholder for the check mark when added with js)*/
+    position: absolute;
+    border: solid #fff;
+    border-width: 0 2px 2px 0; /* Add border on two sides to create L shape */
+    transform: rotate(45deg); /* Rotate the L shape so it gets a V kinda shape */
+    top: 11px;
+    left: 14px;
+    height: 10px; /* Change the check mark size */
+    width: 5px; /* Change the check mark size */
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the input */
+input {
+
+}
+
+/* Style the "Add" button */
+.addBtn {
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
