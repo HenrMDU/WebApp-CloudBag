@@ -3,14 +3,33 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Navigation
-------------------------------------------------------------------------------*/
+body {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100vh;
+}
 
+aside {
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: #282828;
+}
 
+header {
+  background-color: #1d5a61;
+  font-size: 20px;
+  height: 200px;
+}
+
+nav a {
+  text-decoration: none;
+}
 
 /* List
 ------------------------------------------------------------------------------*/

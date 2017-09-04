@@ -10,12 +10,48 @@
 </head>
 
 <!-- How to create a to do list: https://www.w3schools.com/howto/howto_js_todolist.asp -->
-<!-- Add a delete all list items -->
+<!--
+Add a delete all list items
+Fix ul not working on second
+basic layout with organismes working
+OPTION: Style
+add cookies
+clear all button?
+-->
 
 <body>
-    <!-- <?php Include("menu.php"); ?> NEED FIX! -->
-    <?php Include("list.php"); ?>
+  <aside>
+    <header>
+      <p>header</p>
+    </header>
 
-    <script src="script.js"></script>
+    <nav>
+      <ul id="main_nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+
+      <p>Kim</p>
+      <ul id="user_nav">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Lists</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <article>
+    <input type="text" id="inputItem" placeholder="Title...">
+    <button onclick="addItem()" class="addBtn">Add</button>
+
+    <ul id="fullList">
+      <li class="listItem">Clothes</li>
+      <li class="checked listItem">Socks</li>
+      <li class="listItem">Laptop</li>
+      <li class="listItem">Phone charger</li>
+    </ul>
+  </article>
+
+  <script src="script.js"></script>
 </body>
 </html>
