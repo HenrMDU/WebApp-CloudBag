@@ -13,6 +13,7 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100vh;
+  background-color: #AEAEAE;
 }
 
 aside {
@@ -104,4 +105,34 @@ input {
 
 .addBtn:hover {
     background-color: #bbb;
+}
+/*Style the show and hide list button*/
+.hcBtn {
+    cursor: pointer;
+}
+
+.hcBtn:hover {
+    background-color: #bbb;
+}
+#header {
+	font-family: Arial;
+	font-size: 3vw;
+	padding-left: 5%;
+	color: white;
+}
+#kim {
+	font-family: Arial;
+	font-size: 1.5vw;
+	padding-left: 2%;
+	color: white;
+}
+.menulist:nth-child(odd) {
+	background-color:#8E8E8E;
+	font-family: arial;
+	font-size: 1vw;
+}
+.menulist {
+	background-color:#8E8E8E;
+	font-family: arial;
+	font-size: 1vw;
 }

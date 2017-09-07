@@ -22,20 +22,20 @@ clear all button?
 <body>
   <aside>
     <header>
-      <p>header</p>
+      <p id="header">Header</p>
     </header>
-
+    
     <nav>
       <ul id="main_nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Logout</a></li>
+        <li class="menulist"><a href="#">Home</a></li>
+        <li class="menulist"><a href="#">About</a></li>
+        <li class="menulist"><a href="#">Logout</a></li>
       </ul>
 
-      <p>Kim</p>
+      <p id="kim">Kim</p>
       <ul id="user_nav">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Lists</a></li>
+        <li class="menulist"><a href="#">Profile</a></li>
+        <li class="menulist"><a href="#">Lists</a></li>
       </ul>
     </nav>
   </aside>
@@ -43,6 +43,7 @@ clear all button?
   <article>
     <input type="text" id="inputItem" placeholder="Title...">
     <button onclick="addItem()" class="addBtn">Add</button>
+    <button onclick="myFunction()" class="hcBtn">Show/Hide list</button>
 
     <ul id="fullList">
       <li class="listItem">Clothes</li>
