@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -22,36 +23,56 @@ clear all button?
 <body>
   <aside>
     <header>
-      <p id="header">Header</p>
+      <p><a href="#">Cloud Bag</a></p>
     </header>
-    
+
     <nav>
       <ul id="main_nav">
-        <li class="menulist"><a href="#">Home</a></li>
-        <li class="menulist"><a href="#">About</a></li>
-        <li class="menulist"><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Logout</a></li>
       </ul>
 
-      <p id="kim">Kim</p>
+      <p>Helle Ibsen</p>
       <ul id="user_nav">
-        <li class="menulist"><a href="#">Profile</a></li>
-        <li class="menulist"><a href="#">Lists</a></li>
+        <li style="font-weight: 700;"><a href="#"># Poland</a></li>
+        <li><a href="#"># Summer house</a></li>
       </ul>
     </nav>
   </aside>
 
-  <article>
-    <input type="text" id="inputItem" placeholder="Title...">
-    <button onclick="addItem()" class="addBtn">Add</button>
-    <button onclick="myFunction()" class="hcBtn">Show/Hide list</button>
+  <main>
+    <article>
+      <h1>Poland</h1>
 
-    <ul id="fullList">
-      <li class="listItem">Clothes</li>
-      <li class="checked listItem">Socks</li>
-      <li class="listItem">Laptop</li>
-      <li class="listItem">Phone charger</li>
-    </ul>
-  </article>
+      <section>
+        <h2>Helle Ibsen</h2>
+        <input type="text" id="inputItem" placeholder="New item...">
+        <button onclick="addItem()" class="addBtn">Add</button>
+
+        <ul id="fullList">
+          <li class="listItem">Clothes</li>
+          <li class="checked listItem">Socks</li>
+          <li class="listItem">Laptop</li>
+          <li class="listItem">Phone charger</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lars Jensen</h2>
+        <ul class="mem_list">
+          <li>Clothes</li>
+          <li>Tablet</li>
+          <li class="checked">Camera</li>
+          <li class="checked">Headset</li>
+          <li>Card game</li>
+          <li class="checked">Book</li>
+          <li>Pillow</li>
+          <li>Passport</li>
+        </ul>
+      </section>
+    </articel>
+  </main>
 
   <script src="script.js"></script>
 </body>

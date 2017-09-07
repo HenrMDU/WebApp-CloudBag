@@ -10,30 +10,140 @@ html, body {
 }
 
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 100vh;
-  background-color: #AEAEAE;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100%;
+  grid-gap: 20px;
 }
 
 aside {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 150px auto;
+  grid-gap: 50px;
   background-color: #282828;
 }
 
 header {
   background-color: #1d5a61;
-  font-size: 20px;
-  height: 200px;
+  align-self: center;
+}
+
+header p {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:hover {
+  transition: 0.2s;
+  font-size: 36px;
 }
 
 nav a {
   text-decoration: none;
+  color: #fff;
+}
+
+#main_nav {
+  background: #762323;
+  padding: 30px 0 30px 0;
+}
+
+nav ul li {
+  background: #762323;
+  padding: 8px 10px 8px 40px;
+  font-size: 16px;
+}
+
+nav ul li:nth-child(odd) {
+    background: #762323;
+}
+
+nav ul li:hover {
+    transition: 0s;
+    background: none;
+    font-weight: 700;
+}
+
+nav p {
+  color: #fff;
+  padding: 38px 10px 8px 40px;
+  font-weight: 700;
+  background: #762323;
+  margin: 50px 0 0 0;
+}
+
+#user_nav {
+  background: #762323;
+  padding-bottom: 30px;
+}
+
+#user_nav li {
+  padding: 5px 10px 5px 40px;
+  background: none;
+  font-size: 14px;
+}
+
+#user_nav li:hover {
+  font-weight: 700;
+  transition: 0s;
 }
 
 /* List
 ------------------------------------------------------------------------------*/
+
+main {
+  margin-right: 40px;
+  padding: 0 50px 0 50px;
+}
+
+article h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d5a61;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+  background: #762323;
+  padding: 12px 8px 12px 35px;
+}
+
+section hr {
+  border: solid 1px #1d5a61;
+  margin: 5px 0 5px 0;
+}
+
+
+.mem_list li:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+/* Style "odd" list items */
+.mem_list li:nth-child(odd):hover {
+    background: #c4c4c4;
+    color: #000;
+}
+
+ul li.checked:hover {
+    background: #888;
+    color: #fff;
+}
 
 /* Remove margins and padding from the list */
 ul {
@@ -43,21 +153,24 @@ ul {
 
 /* Style the list items */
 ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 35px;
-    background: #eee;
-    font-size: 14px;
-    user-select: none; /* You cannot select the text to e.g copy it (double click text) */
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 35px;
+  background: #e0e0e0;
+  font-size: 14px;
+  user-select: none; /* You cannot select the text to e.g copy it (double click text) */
 }
 
 /* Style "odd" list items */
 ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #c4c4c4;
 }
 
 ul li:hover {
-    background: #ddd;
+    background: #287c86;
+    color: #fff;
+    transition: 0.3s;
 }
 
 /* Style "checked" list items */
@@ -89,50 +202,35 @@ ul li.checked::before {
 }
 
 .close:hover {
-    background-color: #f44336;
+    background-color: #1d5a61;
     color: white;
 }
 
 /* Style the input */
-input {
+input::placeholder {
+  color: #4a9199;
+}
 
+input {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 16px 10px 35px;
+  border: solid 1px #1d5a61;
+  color: #1d5a61;
+  border-radius: 3%;
 }
 
 /* Style the "Add" button */
 .addBtn {
     cursor: pointer;
+    padding: 12px 16px 12px 16px;
+    background: #21666e;
+    border: none;
+    color: #fff;
+    border-radius: 5%;
 }
 
 .addBtn:hover {
-    background-color: #bbb;
-}
-/*Style the show and hide list button*/
-.hcBtn {
-    cursor: pointer;
-}
-
-.hcBtn:hover {
-    background-color: #bbb;
-}
-#header {
-	font-family: Arial;
-	font-size: 3vw;
-	padding-left: 5%;
-	color: white;
-}
-#kim {
-	font-family: Arial;
-	font-size: 1.5vw;
-	padding-left: 2%;
-	color: white;
-}
-.menulist:nth-child(odd) {
-	background-color:#8E8E8E;
-	font-family: arial;
-	font-size: 1vw;
-}
-.menulist {
-	background-color:#8E8E8E;
-	font-family: arial;
-	font-size: 1vw;
+    background-color: #17474d;
+    transition: 0.2s;
 }

@@ -16,7 +16,7 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() { //????-------------
     var div = this.parentElement; //div = the span with class="close" is inside an li element (the parent)
     div.style.display = 'none';
-  };
+  }
 }
 
 // Add a "checked" symbol when clicking on a list item
@@ -50,15 +50,6 @@ function addItem() {
     close[i].onclick = function() { //????-------------
       var div = this.parentElement; //div = the span with class="close" is inside an li element (the parent)
       div.style.display = 'none';
-    };
-  }
-}
-//Fundet ved w3school gennem denne link https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-function myFunction() {
-    var x = document.getElementById('fullList');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
     }
+  }
 }
