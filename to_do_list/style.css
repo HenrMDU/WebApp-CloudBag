@@ -128,10 +128,11 @@ section hr {
   margin: 5px 0 5px 0;
 }
 
-
 .mem_list li:hover {
   background: #e0e0e0;
   color: #000;
+  user-select: none;
+  cursor: default;
 }
 
 /* Style "odd" list items */
@@ -140,10 +141,11 @@ section hr {
     color: #000;
 }
 
-ul li.checked:hover {
+.mem_list li.checked:hover {
     background: #888;
     color: #fff;
 }
+
 
 /* Remove margins and padding from the list */
 ul {
