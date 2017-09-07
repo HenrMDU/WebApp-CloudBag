@@ -135,6 +135,11 @@ section hr {
   cursor: default;
 }
 
+.mem_list li {
+  user-select: none;
+  cursor: default;
+}
+
 /* Style "odd" list items */
 .mem_list li:nth-child(odd):hover {
     background: #c4c4c4;
@@ -145,7 +150,6 @@ section hr {
     background: #888;
     color: #fff;
 }
-
 
 /* Remove margins and padding from the list */
 ul {
