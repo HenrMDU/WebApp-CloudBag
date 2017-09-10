@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -46,7 +48,7 @@ clear all button?
       <h1>Poland</h1>
 
       <section>
-        <h2>Helle Ibsen</h2>
+        <h2>Helle Ibsen</h2><i class="material-icons">&#xE7FD;</i>
         <input type="text" id="inputItem" placeholder="New item...">
         <button onclick="addItem()" class="addBtn">Add</button>
 
@@ -59,7 +61,8 @@ clear all button?
       </section>
 
       <section>
-        <h2>Lars Jensen</h2>
+        <h2>Lars Jensen</h2><i class="material-icons">&#xE7FB;</i>
+        <br><br>
         <ul class="mem_list">
           <li>Clothes</li>
           <li>Tablet</li>
